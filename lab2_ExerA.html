@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Workshop 2026</title>
+</head>
+<body>
+
+    <!-- Header: Event name and tagline -->
+    <header>
+        <h1>Programming Workshop 2026</h1>
+        <p>Learn, Code, Innovate!</p>
+    </header>
+
+    <!-- Navigation: Links to sections of the page -->
+    <nav>
+        <a href="#about">About the Event</a> |
+        <a href="#schedule">Event Schedule</a> |
+        <a href="#register">Registration</a>
+    </nav>
+
+    <!-- Section 1: About the Event -->
+    <section id="about">
+        <h2>About the Event</h2>
+
+        <p>
+            Programming Workshop 2026 is a one-day event organised
+            to help students improve their programming skills,
+            explore new technologies and learn from experienced speakers.
+        </p>
+
+        <!-- Article 1: Introduction to the first speaker -->
+        <article>
+            <h3>Speaker 1: Dr. Nurul Nazihah Jamal</h3>
+            <p>
+                Dr. Nurul Nazihah Jamal is a software engineer who specialises
+                in web development. He will introduce students to the
+                fundamentals of HTML and website development.
+            </p>
+        </article>
+
+        <!-- Article 2: Introduction to the second speaker -->
+        <article>
+            <h3>Speaker 2: Ms. Farhana Nafisa Binti Azhar</h3>
+            <p>
+                Ms. Farhana Nafisa Binti Azhar is an application developer who will
+                share practical programming techniques and guide
+                students through a hands-on coding activity.
+            </p>
+        </article>
+    </section>
+
+    <!-- Section 2: Event Schedule -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+
+        <p>Date: 15 November 2026</p>
+        <p>Venue: Faculty Computer Laboratory</p>
+
+        <!-- Table: Schedule of activities from morning to evening -->
+        <table border=" 1">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Venue</th>
+                    <th>Person in Charge</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>8:00 AM - 8:30 AM</td>
+                    <td>Registration and Breakfast</td>
+                    <td>Main Hall</td>
+                    <td>Organising Committee</td>
+                </tr>
+
+                <tr>
+                    <td>8:30 AM - 9:00 AM</td>
+                    <td>Opening Ceremony</td>
+                    <td>Main Hall</td>
+                    <td>Event Coordinator</td>
+                </tr>
+
+                <tr>
+                    <td>9:00 AM - 10:30 AM</td>
+                    <td>Introduction to HTML</td>
+                    <td rowspan="2">Computer Laboratory 1</td>
+                    <td>Dr. Nurul Nazihah Jamal</td>
+                </tr>
+
+                <tr>
+                    <td>10:30 AM - 12:00 PM</td>
+                    <td>Hands-on Web Development</td>
+                    <td>Ms. Farhana Nafisa Binti Azhar</td>
+                </tr>
+
+                <tr>
+                    <td>12:00 PM - 1:00 PM</td>
+                    <td colspan="3">Lunch Break</td>
+                </tr>
+
+                <tr>
+                    <td>1:00 PM - 2:30 PM</td>
+                    <td>Introduction to JavaScript</td>
+                    <td>Computer Laboratory 2</td>
+                    <td>Mr. Daniel Lee</td>
+                </tr>
+
+                <tr>
+                    <td>2:30 PM - 3:00 PM</td>
+                    <td>Tea Break</td>
+                    <td>Main Hall</td>
+                    <td>Organising Committee</td>
+                </tr>
+
+                <tr>
+                    <td>3:00 PM - 4:30 PM</td>
+                    <td>Mini Coding Challenge</td>
+                    <td>Computer Laboratory 1</td>
+                    <td>Ms. Farhana Nafisa Binti Azhar</td>
+                </tr>
+
+                <tr>
+                    <td>4:30 PM - 5:00 PM</td>
+                    <td>Prize Giving and Closing Ceremony</td>
+                    <td>Main Hall</td>
+                    <td>Event Coordinator</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section 3: Student Registration Form -->
+    <section id="register">
+        <h2>Event Registration</h2>
+
+        <p>Complete the form below to register for the workshop.</p>
+
+        <!-- Form: Collects student details and session preferences -->
+        <form action="register.html" method="post">
+
+            <!-- Text inputs for student information -->
+            <p>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+
+            <p>
+                <label for="matric">Matric Number:</label>
+                <input type="text" id="matric" name="matric" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <!-- Radio buttons: Select one year of study -->
+            <fieldset>
+                <legend>Year of Study:</legend>
+
+                <input type="radio" id="year1" name="year" value="Year 1" required>
+                <label for="year1">Year 1</label>
+
+                <input type="radio" id="year2" name="year" value="Year 2">
+                <label for="year2">Year 2</label>
+
+                <input type="radio" id="year3" name="year" value="Year 3">
+                <label for="year3">Year 3</label>
+
+                <input type="radio" id="year4" name="year" value="Year 4">
+                <label for="year4">Year 4</label>
+            </fieldset>
+
+            <!-- Checkboxes: Select one or more sessions -->
+            <fieldset>
+                <legend>Sessions You Want to Join:</legend>
+
+                <input type="checkbox" id="html" name="sessions" value="HTML">
+                <label for="html">Introduction to HTML</label>
+
+                <br>
+
+                <input type="checkbox" id="javascript" name="sessions" value="JavaScript">
+                <label for="javascript">Introduction to JavaScript</label>
+
+                <br>
+
+                <input type="checkbox" id="coding" name="sessions" value="Coding Challenge">
+                <label for="coding">Mini Coding Challenge</label>
+
+                <br>
+
+                <input type="checkbox" id="webdev" name="sessions" value="Web Development">
+                <label for="webdev">Hands-on Web Development</label>
+            </fieldset>
+
+            <!-- Drop-down list: Select programme or faculty -->
+            <p>
+                <label for="programme">Programme or Faculty:</label>
+
+                <select id="programme" name="programme" required>
+                    <option value="">-- Select Programme or Faculty --</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Software Engineering">Software Engineering</option>
+                    <option value="Information Systems">Information Systems</option>
+                </select>
+            </p>
+
+            <!-- Submit button: Sends form data to the specified action -->
+            <p>
+                <input type="submit" value="Register Now">
+            </p>
+
+        </form>
+    </section>
+
+    <!-- Footer: Organiser information and copyright -->
+    <footer>
+        <p>Organised by: Faculty Programming Workshop Committee</p>
+        <p>&copy; 2026 Programming Workshop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
