@@ -1,0 +1,234 @@
+/* ==========================================
+   General page styling (Soft Yellow Theme)
+   ========================================== */
+- {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #4a4033;
+    background-color: #fcf8f2;
+}
+
+header {
+    padding: 25px;
+    color: #5c4033;
+    background-color: #fce8b2; /* Soft yellow header */
+    border-bottom: 2px solid #f4d068;
+}
+
+.tagline {
+    text-align: center;
+    color: #6c583f;
+}
+
+section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 22px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(212, 190, 140, 0.15);
+}
+
+h2 {
+    color: #8c6d33;
+    text-align: center;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #e5b849; /* Richer soft yellow/gold */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav li a {
+    display: block;
+    padding: 14px 22px;
+    color: #4a3810;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    color: #ffffff;
+    background-color: #d4a037;
+}
+
+/* Menu item cards */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-item {
+    flex: 1 1 250px;
+    padding: 18px;
+    border: 1px solid #f3e0b5;
+    border-radius: 8px;
+    background-color: #fffdf5; /* Very pale yellow tint */
+}
+
+.menu-item h3 {
+    color: #8c6d33;
+}
+
+.old-price {
+    margin-right: 10px;
+    color: #8c8275;
+    text-decoration: line-through;
+}
+
+.highlight {
+    color: #b85d19; /* Warm orange highlight for prices */
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+/* Video and caption */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #7a633a;
+    font-style: italic;
+}
+
+/* Feedback form */
+.feedback-form {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 22px;
+    border: 1px solid #f3e0b5;
+    border-radius: 8px;
+    background-color: #fffdf5;
+}
+
+.feedback-form > label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #5c4a2a;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #d9c396;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+fieldset {
+    margin-top: 16px;
+    border: 1px solid #f3e0b5;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+fieldset label {
+    display: inline-block;
+    margin: 6px 12px 6px 0;
+    color: #5c4a2a;
+}
+
+button {
+    margin-top: 18px;
+    padding: 11px 22px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #d4a037;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #b8862b;
+}
+
+/* Link states */
+a:link {
+    color: #2980b9;
+}
+
+a:visited {
+    color: #8e44ad;
+}
+
+a:hover {
+    color: #e67e22;
+}
+
+a:active {
+    color: #c0392b;
+}
+
+/* Keep navigation link colours readable */
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+    color: #4a3810;
+}
+
+/* Footer */
+footer {
+    padding: 22px;
+    text-align: center;
+    color: #5c4033;
+    background-color: #fce8b2;
+    border-top: 2px solid #f4d068;
+}
+
+footer a:link,
+footer a:visited {
+    color: #5c4033;
+    font-weight: bold;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    section {
+        width: 95%;
+        padding: 16px;
+    }
+
+    .feedback-form {
+        width: 100%;
+    }
+}

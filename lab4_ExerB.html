@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+    <link rel="stylesheet" href="cafe.css">
+
+    <!-- Internal CSS: styles for the page content -->
+    <style>
+        h1 {
+            text-decoration: overline;
+            text-align: center;
+        }
+
+        #menu {
+            background-color: #fffaf2;
+        }
+
+        .intro {
+            font-size: 18px;
+            background-color: #fdebd0;
+            padding: 12px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #c0392b;
+        }
+
+        h2 {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Errors corrected from the original code:
+         1. Line 152: HTML comment syntax was used inside CSS; removed and replaced with a CSS comment.
+         2. Line 154: list-style-type: no is invalid; changed to none.
+         3. Lines 158-161: link states were in the wrong order; changed to link, visited, hover, active in cafe.css.
+         4. Line 162: overlined is invalid; changed to overline.
+         5. Line 163: missing colon after color; corrected in the stylesheet.
+         6. Line 167: missing dot before the highlight class selector; corrected to .highlight.
+         7. Line 171: missing closing brace for the #intro rule; corrected.
+         8. Line 179: href="menu" did not point to the section; changed to href="#menu".
+         9. Lines 186-187: class="intro" did not match the original #intro selector; changed styling to .intro.
+        10. Lines 188 and 192: duplicate id="item"; changed to class="menu-item".
+        11. Line 201: video had no controls attribute; controls added.
+        12. Line 202: source type was incomplete; changed to video/mp4.
+    -->
+
+    <!-- Header: café title -->
+    <header>
+        <h1>e-Café Campus</h1>
+        <p class="tagline">Fresh food, great coffee and friendly service.</p>
+    </header>
+
+    <!-- Navigation bar: links to menu, video, feedback and contact -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu section: café food and promotional prices -->
+    <section id="menu">
+        <h2>Today's Menu</h2>
+        <p class="intro">Freshly brewed coffee and local delights every day.</p>
+
+        <div class="menu-container">
+            <article class="menu-item">
+                <h3>Kopi Tarik</h3>
+                <p>Traditional Malaysian pulled coffee.</p>
+                <p>
+                    <span class="old-price">RM 4.50</span>
+                    <span class="highlight">RM 3.50</span>
+                </p>
+            </article>
+
+            <article class="menu-item">
+                <h3>Nasi Lemak</h3>
+                <p>Fragrant coconut rice served with sambal and anchovies.</p>
+                <p>
+                    <span class="old-price">RM 6.50</span>
+                    <span class="highlight">RM 5.00</span>
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Video section: café promotional video and caption -->
+    <section id="video">
+        <h2>Watch Our Story</h2>
+        <figure>
+            <video controls width="400">
+                <source src="redang.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Visit e-Café Campus for delicious food and drinks.</figcaption>
+        </figure>
+    </section>
+
+    <!-- Feedback section: collect customer information and preferences -->
+    <section id="feedback">
+        <h2>Customer Feedback</h2>
+
+        <form class="feedback-form" action="#" method="post">
+            <label for="customer-name">Name:</label>
+            <input type="text" id="customer-name" name="name" required>
+
+            <label for="customer-email">E-mail:</label>
+            <input type="email" id="customer-email" name="email" required>
+
+            <fieldset>
+                <legend>Visit Type:</legend>
+                <label><input type="radio" name="visit-type" value="Dine-in" required> Dine-in</label>
+                <label><input type="radio" name="visit-type" value="Take-away"> Take-away</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Favourite Items:</legend>
+                <label><input type="checkbox" name="favourite" value="Kopi Tarik"> Kopi Tarik</label>
+                <label><input type="checkbox" name="favourite" value="Nasi Lemak"> Nasi Lemak</label>
+                <label><input type="checkbox" name="favourite" value="Tea"> Tea</label>
+            </fieldset>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <!-- Footer: copyright and café contact details -->
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus</p>
+        <address>
+            E-mail: <a href="mailto:ecafe@example.com">ecafe@example.com</a>
+        </address>
+    </footer>
+</body>
+</html>
