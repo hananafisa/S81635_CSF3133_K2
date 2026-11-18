@@ -1,0 +1,138 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f8fb; /* Latar belakang putih kebiruan lembut */
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Header Styling - Tema Biru Laut Cerah */
+header {
+    background: linear-gradient(135deg, #0077b6, #0096c7);
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 119, 182, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.15rem;
+    color: #caf0f8; /* Biru ais cerah untuk subjudul */
+    font-weight: 400;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #ffffff;
+    border-bottom: 3px solid #0096c7;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: block;
+    color: #0077b6;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #0096c7; /* Biru cerah apabila disentuh kursor */
+    color: #ffffff;
+}
+
+/* Main Content Layout */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    background: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    border-top: 5px solid #0096c7;
+    box-shadow: 0 6px 15px rgba(0, 119, 182, 0.08);
+}
+
+section h2 {
+    color: #0077b6;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #90e0ef; /* Garisan biru lembut */
+    padding-bottom: 0.5rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    color: #334155;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #ade8f4;
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ade8f4;
+}
+
+th {
+    background-color: #0077b6;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f9ff; /* Biru sangat lembut untuk baris selang-seli */
+}
+
+tr:hover {
+    background-color: #caf0f8; /* Kesan hover biru muda bersih */
+    transition: background-color 0.2s ease;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #023e8a;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.95rem;
+    margin-top: 3rem;
+}
